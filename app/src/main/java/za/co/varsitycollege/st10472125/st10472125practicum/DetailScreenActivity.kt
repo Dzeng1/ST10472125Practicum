@@ -16,6 +16,10 @@ class DetailScreenActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_detail_screen)
+        val songs = intent.getStringExtra("songs")
+        val avgRating = intent.getIntArrayExtra("avg rating")
+        val comments = intent.getStringExtra("comments")
+        val title = intent.getStringExtra("Title")
 
       var resultDisplay = findViewById<TextView>(R.id.resultDisplay)
         var btnSongs = findViewById<AppCompatButton>(R.id.btnSongs)
